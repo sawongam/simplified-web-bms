@@ -1,0 +1,84 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav .btn {
+    padding: 8px 14px;
+    background: #007bff;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  /* Mobile menu */
+  @media (max-width: 768px) {
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li { 
+      margin: 10px 0;
+    }
+  
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: row-reverse; */
+    padding: 0 50px;
+  }
+  
+  .content {
+    flex: 2;
+    /* width: 50%; */
+    padding: 40px;
+  }
+  
+  .btn {
+    background: #F1A501 !important;
+    border-radius: 20px;
+    padding: 12px 14px;
+    color: #fff;
+  } 
+
+  .btn:hover {
+    background: #d69f27 !important;
+  }
+  
+  /* Social icons */
+  
+  /* Image */
+  
+  @media (max-width: 768px) {
+  
+    .hero {
+      flex-direction: column;
+    }
+    
+    .content,
+    img {
+      width: 100%;
+      text-align: center;
+    }
+  
+  }
+
+  .img-fluid{max-width:90%;height:auto}
+
+  .bank-img {
+    flex: 3;
+  }

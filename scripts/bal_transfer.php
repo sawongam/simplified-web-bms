@@ -5,6 +5,11 @@ if (!isset($_SESSION['AccNo'])) {
     exit;
 }
 
+if (!isset($_POST['submit'])) {
+    header('Location: ../pages/dashboard/index.php?msg=Please make the transaction');
+    exit;
+ }
+
 require('../configs/db.php');
 
 $receiver_accNo = $_POST['receiver_accNo'];

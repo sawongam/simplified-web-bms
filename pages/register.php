@@ -52,7 +52,7 @@ if (isset($_GET['msg'])) {
                         <label class="login-label">Confirm Password</label>
                         <input class="textfield" type="password" id="confirm-password">
                         <img src="../assets/img/eye-open.png" class="password-icon" id="eye-confirm">
-                        <small id="error-confirmPassword" class="form-text text-danger error-font"> <?php echo $error?> </small>
+                        <small id="error-confirmPassword" class="form-text error-font"> <?php echo $error?> </small>
                     </div>
                     <button name="submit" class="elevatedButton login-label">Register</button>
                 </form>

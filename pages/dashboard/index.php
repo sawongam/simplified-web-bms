@@ -7,7 +7,16 @@ if (!isset($_SESSION['AccNo'])) {
 
 require('../../configs/db.php');
 require('../../scripts/get_balance.php'); // $balance
-// require('../../scripts/get_transactions.php'); // $trns
+require('../../scripts/get_userinfo.php'); // $name, $fName
+require('../../scripts/get_transactions.php'); // $trns
+require('../../scripts/get_analytics.php'); // $totalDebit, $totalCredit
+
+//Check if there is an GET message
+$error = '';
+if (isset($_GET['msg'])) {
+    $error = $_GET['msg'];
+}
+
 $accNo = $_SESSION['AccNo'];
 $sql = "SELECT Balance FROM balance WHERE AccNo = '$accNo'";
 $result = mysqli_query($conn, $sql);
@@ -63,24 +72,36 @@ $balance = $data['Balance'];
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profile.html">
-                            <i class="fas fa-user"></i>
-                            <span>Profile</span>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <span>Transfer</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="table.html">
-                            <i class="fas fa-table"></i><span>Transactions</span>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Transactions</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="table.html">
-                            <i class="fas fa-table"></i><span>Settings</span>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-industry"></i>
+                            <span>Analytics</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.html">
-                            <i class="fas fa-user-circle"></i><span>Log out</span>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user"></i><span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-adjust"></i><span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../scripts/logout.php">
+                            <i class="fas fa-sign-out-alt"></i><span>Log out</span>
                         </a>
                     </li>
                 </ul>
@@ -103,7 +124,9 @@ $balance = $data['Balance'];
                     </li>
                     <div class="topbar-divider"></div>
                     <li class="nav-item avatar-n">
-                        <p><span class="avatar-text">Valerie Luna</span></p>
+                        <p><span class="avatar-text">
+                                <?php echo $name ?>
+                            </span></p>
                         <div class="avatar-nav"></div>
                     </li>
                 </ul>
@@ -113,7 +136,9 @@ $balance = $data['Balance'];
             <div class="index-content container-main">
                 <div class="dashboard-header  d-flex justify-between">
                     <!--!Dashboard header-->
-                    <h3>Welcome Sangam,</h3>
+                    <h3>Welcome,
+                        <?php echo $fName ?>
+                    </h3>
                 </div>
                 <!--!Indo cards-->
                 <div class="income-inf-row row">
@@ -154,7 +179,7 @@ $balance = $data['Balance'];
                             <div class="card-body">
                                 <div class="card-text">
                                     <div class="card-span"><span style="color: rgb(28, 200, 138);">Income</span></div>
-                                    <div class="card-price"><span>Rs. 69</span></div>
+                                    <div class="card-price"><span>Rs. <?php echo $totalCredit ?> </span></div>
                                 </div>
                                 <div class="card-icon">
                                     <i class="fas fa-money-bill fa-2x text-gray-300"></i>
@@ -168,7 +193,7 @@ $balance = $data['Balance'];
                             <div class="card-body">
                                 <div class="card-text">
                                     <div class="card-span"><span style="color: red;">Expense</span></div>
-                                    <div class="card-price"><span>Rs. 36</span></div>
+                                    <div class="card-price"><span>Rs. <?php echo $totalDebit ?></span></div>
                                 </div>
                                 <div class="card-icon">
                                     <i class="fas fa-exchange-alt fa-2x text-gray-300"></i>
@@ -201,34 +226,32 @@ $balance = $data['Balance'];
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Deposit</td>
-                                                <td>Salary</td>
-                                                <td>$5000</td>
-                                                <td>End of month salary</td>
-                                                <td>2022/01/01</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Withdrawal</td>
-                                                <td>Groceries</td>
-                                                <td>$4500</td>
-                                                <td>Weekly grocery shopping</td>
-                                                <td>2022/01/02</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Deposit</td>
-                                                <td>Freelance work</td>
-                                                <td>$5500</td>
-                                                <td>Payment for freelance project</td>
-                                                <td>2022/01/03</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Withdrawal</td>
-                                                <td>Rent</td>
-                                                <td>$3000</td>
-                                                <td>Monthly rent payment</td>
-                                                <td>2022/01/04</td>
-                                            </tr>
+                                            <?php 
+                                            foreach ($trns as $trn) {
+                                                $date = $trn['Date'];
+                                                $sender = $trn['Sender'];
+                                                $receiver = $trn['Receiver'];
+                                                $amount = $trn['Amount'];
+                                                $remarks = $trn['Remarks'];
+                                                if ($trn['Sender'] == $accNo) {
+                                                    echo "<tr>
+                                                    <td>Debit</td>
+                                                    <td>Transfer to $receiver</td>
+                                                    <td>Rs. $amount</td>
+                                                    <td>$remarks</td>
+                                                    <td>$date</td>
+                                                </tr>";
+                                                } else {
+                                                    echo "<tr>
+                                                    <td>Credit</td>
+                                                    <td>Transfer from $receiver</td>
+                                                    <td>Rs. $amount</td>
+                                                    <td>$remarks</td>
+                                                    <td>$date</td>
+                                                </tr>";
+                                                }
+                                            }
+                                                ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -269,10 +292,12 @@ $balance = $data['Balance'];
                                             <input class="form-control-prof" type="text" id="remarks" name="remarks">
                                         </div>
                                     </div>
+                                    <small id="error-code" class="error-font"> <?php echo $error?> </small>
                                     <!--row3-->
                                     <div class="form-row">
                                         <div class="form-row-button text-center">
-                                            <button class="button-profile" name="submit" type="button">Transfer</button>
+                                            <button class="button-profile" name="submit" id="submit"
+                                                type="submit">Transfer</button>
                                         </div>
                                     </div>
                                 </form>
