@@ -8,7 +8,7 @@ if (!isset($_SESSION['AccNo'])) {
 if (!isset($_POST['submit'])) {
     header('Location: ../pages/dashboard/index.php?msg=Please make the transaction');
     exit;
- }
+}
 
 require('../configs/db.php');
 

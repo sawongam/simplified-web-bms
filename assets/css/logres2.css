@@ -8,54 +8,42 @@
     bottom: 0;
 }
 
-/* Overall container */
 .main-container {
     max-width: 100%;
-    /* Adjust as needed */
     margin: 0 auto;
 }
 
-/* Row */
 .row {
     display: flex;
 }
 
-/* Form section */
 .form-section {
     flex: 1;
-    /* Take up available space */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-/* Form wrapper */
 .form-wrapper {
     width: 500px;
-    /* Adjust as needed */
     padding: 30px;
     background-color: #fff;
-    /* Or any desired background */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo wrapper */
 .logo-wrapper {
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* Form header */
 .login-header {
     font-size: 22px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 50px;
 }
-
-/* Form styles */
 
 form {
     max-width: 400px;
@@ -89,7 +77,6 @@ button {
     cursor: pointer;
 }
 
-/* Input focus */
 input:focus {
     outline: none;
     border-color: #777;
@@ -115,51 +102,39 @@ input:focus {
     height: 22px;
 }
 
-/* Image zoom animation */
 .social-icons img:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
 
-/* Logo section (large screens only) */
 .logo-section {
     flex: 1;
-    /* Take up available space */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* background-image: url(../assets/img/logo-background.jpg); */
-    /* Adjust path if needed */
     background-position: right;
     background-size: cover;
 }
 
-/* Logo image */
 .logo-section img {
     height: 100%;
 }
 
-/* CSS for smaller screens */
 @media screen and (max-width: 1200px) {
     .form-section {
         width: 100%;
-        /* Make the form section take up the full width on smaller screens */
     }
 
     .logo-section {
         display: none;
-        /* Hide the logo section on smaller screens */
     }
 }
-
-
 
 .reg-header {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 
 .container {
     display: flex;
@@ -167,11 +142,6 @@ input:focus {
 
 .reg-section {
     flex: 3;
-    /* align-items: center;
-    height: 100vh; */
-    /* padding: 20px; */
-    /* justify-content: center;
-    /* margin: 0;  */
 }
 
 .image {
@@ -181,20 +151,10 @@ input:focus {
 
 .reg-d {
     position: absolute;
-    /* Allows the image to be positioned relative to its parent */
     right: 0;
 }
 
-/* Form styles */
-
-/* form {
-    max-width: 400px;
-    margin: 0 auto;  
-  } */
-
-/* Form and image side by side */
 @media (max-width: 1200px) {
-
     .container {
         flex-direction: column;
     }
@@ -206,5 +166,4 @@ input:focus {
     .image {
         display: none;
     }
-
 }

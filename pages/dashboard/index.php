@@ -179,7 +179,9 @@ $balance = $data['Balance'];
                             <div class="card-body">
                                 <div class="card-text">
                                     <div class="card-span"><span style="color: rgb(28, 200, 138);">Income</span></div>
-                                    <div class="card-price"><span>Rs. <?php echo $totalCredit ?> </span></div>
+                                    <div class="card-price"><span>Rs.
+                                            <?php echo $totalCredit ?>
+                                        </span></div>
                                 </div>
                                 <div class="card-icon">
                                     <i class="fas fa-money-bill fa-2x text-gray-300"></i>
@@ -193,7 +195,9 @@ $balance = $data['Balance'];
                             <div class="card-body">
                                 <div class="card-text">
                                     <div class="card-span"><span style="color: red;">Expense</span></div>
-                                    <div class="card-price"><span>Rs. <?php echo $totalDebit ?></span></div>
+                                    <div class="card-price"><span>Rs.
+                                            <?php echo $totalDebit ?>
+                                        </span></div>
                                 </div>
                                 <div class="card-icon">
                                     <i class="fas fa-exchange-alt fa-2x text-gray-300"></i>
@@ -226,7 +230,7 @@ $balance = $data['Balance'];
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php 
+                                            <?php
                                             foreach ($trns as $trn) {
                                                 $date = $trn['Date'];
                                                 $sender = $trn['Sender'];
@@ -251,7 +255,7 @@ $balance = $data['Balance'];
                                                 </tr>";
                                                 }
                                             }
-                                                ?>
+                                            ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -292,7 +296,9 @@ $balance = $data['Balance'];
                                             <input class="form-control-prof" type="text" id="remarks" name="remarks">
                                         </div>
                                     </div>
-                                    <small id="error-code" class="error-font"> <?php echo $error?> </small>
+                                    <small id="error-code" class="error-font">
+                                        <?php echo $error ?>
+                                    </small>
                                     <!--row3-->
                                     <div class="form-row">
                                         <div class="form-row-button text-center">

@@ -51,7 +51,9 @@ if (isset($_GET['msg'])) {
                             <label class="login-label" for="password">Password</label>
                             <input class="textfield" type="password" id="password" name="password">
                             <img src="../assets/img/eye-open.png" class="password-icon" id="eye-login">
-                            <small id="error-password" class="error-font"><?php echo $error ?></small>
+                            <small id="error-password" class="error-font">
+                                <?php echo $error ?>
+                            </small>
                         </div>
                         <button class="elevatedButton login-label" name="submit" type="submit">Login</button>
                     </form>

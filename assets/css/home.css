@@ -59,7 +59,6 @@ nav ul a.nav-change-color:hover {
     bottom: 0;
     height: 70%;
     width: 40%;
-    /* background-color: #AFB3FF;  */
     z-index: -1;
     overflow: hidden;
 }

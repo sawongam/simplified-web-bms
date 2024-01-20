@@ -28,43 +28,44 @@ if (isset($_GET['msg'])) {
         <div class="image">
             <img src="../assets/img/register-d.png" class="register-d reg-d">
             <img src="../assets/img/register-bank.png" class="register-bank">
-          </div>
+        </div>
 
         <div class="reg-section">
-                <h1 class="login-header reg-header">Please Fill out form to Register</h1>
-                <form action="../scripts/register_auth.php" method="POST">
-                    <label class="login-label">Full Name</label>
-                    <input class="textfield" type="text" id="fullName" name="fullName">
-                    <small id="error-fullName" class="form-text text-danger error-font"></small>
-                    <label class="login-label">Address</label>
-                    <input class="textfield" type="text" id="address" name="address">
-                    <small id="error-address" class="form-text text-danger error-font"></small>
-                    <label class="login-label">Email</label>
-                    <input class="textfield" type="email" id="email" name="email">
-                    <small id="error-email" class="form-text text-danger error-font"></small>
-                    <div class="password-field" >
-                        <label class="login-label" >Password</label>
-                        <input class="textfield" type="password" id="password" name="password">
-                        <img src="../assets/img/eye-open.png" class="password-icon" id="eye-register">
-                        <small id="error-password" class="text-danger error-font"></small>
-                    </div>
-                    <div class="password-field">
-                        <label class="login-label">Confirm Password</label>
-                        <input class="textfield" type="password" id="confirm-password">
-                        <img src="../assets/img/eye-open.png" class="password-icon" id="eye-confirm">
-                        <small id="error-confirmPassword" class="form-text error-font"> <?php echo $error?> </small>
-                    </div>
-                    <button name="submit" class="elevatedButton login-label">Register</button>
-                </form>
-                <p class="register-link">Already have an account? <a class="no-underline reg-log"
-                        href="login.php">Login</a>
-                </p>
-
-                <div class="social-icons">
-                    <a href="#"><img src="../assets/img/fb-icon.png"></a>
-                    <a href="#"><img src="../assets/img/whats-icon.png"></a>
-                    <a href="#"><img src="../assets/img/tel-icon.png"></a>
+            <h1 class="login-header reg-header">Please Fill out form to Register</h1>
+            <form action="../scripts/register_auth.php" method="POST">
+                <label class="login-label">Full Name</label>
+                <input class="textfield" type="text" id="fullName" name="fullName">
+                <small id="error-fullName" class="form-text text-danger error-font"></small>
+                <label class="login-label">Address</label>
+                <input class="textfield" type="text" id="address" name="address">
+                <small id="error-address" class="form-text text-danger error-font"></small>
+                <label class="login-label">Email</label>
+                <input class="textfield" type="email" id="email" name="email">
+                <small id="error-email" class="form-text text-danger error-font"></small>
+                <div class="password-field">
+                    <label class="login-label">Password</label>
+                    <input class="textfield" type="password" id="password" name="password">
+                    <img src="../assets/img/eye-open.png" class="password-icon" id="eye-register">
+                    <small id="error-password" class="text-danger error-font"></small>
                 </div>
+                <div class="password-field">
+                    <label class="login-label">Confirm Password</label>
+                    <input class="textfield" type="password" id="confirm-password">
+                    <img src="../assets/img/eye-open.png" class="password-icon" id="eye-confirm">
+                    <small id="error-confirmPassword" class="form-text error-font">
+                        <?php echo $error ?>
+                    </small>
+                </div>
+                <button name="submit" class="elevatedButton login-label">Register</button>
+            </form>
+            <p class="register-link">Already have an account? <a class="no-underline reg-log" href="login.php">Login</a>
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><img src="../assets/img/fb-icon.png"></a>
+                <a href="#"><img src="../assets/img/whats-icon.png"></a>
+                <a href="#"><img src="../assets/img/tel-icon.png"></a>
+            </div>
 
         </div>
 

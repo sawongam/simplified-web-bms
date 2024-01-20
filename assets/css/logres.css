@@ -56,12 +56,12 @@
 }
 
 .login-block {
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    width: 32.5%; 
-    background-color: #AFB3FF; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 32.5%;
+    background-color: #AFB3FF;
     z-index: -1;
     overflow: hidden;
 }
@@ -72,9 +72,9 @@
 }
 
 .register-bank {
-    position: absolute; 
+    position: absolute;
     left: 0;
-    bottom: 0; 
+    bottom: 0;
 }
 
 .password-field {
@@ -82,7 +82,7 @@
 }
 
 .password-icon {
-    height: 20px; 
+    height: 20px;
     position: absolute;
     top: 55%;
     right: 10px;
@@ -91,7 +91,6 @@
 }
 
 .error-font {
-    /* margin: 0; */
     color: red;
     height: 1em;
     display: block;

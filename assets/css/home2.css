@@ -38,13 +38,11 @@ nav .btn {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* flex-direction: row-reverse; */
   padding: 0 50px;
 }
 
 .content {
   flex: 2;
-  /* width: 50%; */
   padding: 40px;
 }
 
@@ -58,10 +56,6 @@ nav .btn {
 .btn:hover {
   background: #d69f27 !important;
 }
-
-/* Social icons */
-
-/* Image */
 
 @media (max-width: 768px) {
 
@@ -86,11 +80,12 @@ nav .btn {
   flex: 3;
 }
 
-.social-icons span{
+.social-icons span {
   padding-left: 5px;
   padding-right: 10px;
   font-size: 14px;
 }
+
 .social-icons {
   margin-top: 50px;
   display: flex;
@@ -105,7 +100,6 @@ nav .btn {
   height: 20px;
 }
 
-/* Image zoom animation */
 .social-icons img:hover {
   transform: scale(1.2);
 }
