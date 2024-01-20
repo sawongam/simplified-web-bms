@@ -28,6 +28,7 @@
     border-color: #656ED3 !important;
     background-color: #EBEFFF !important;
     border-radius: 15px;
+    margin-bottom: 7px;
 }
 
 .elevatedButton {
@@ -83,13 +84,15 @@
 .password-icon {
     height: 20px; 
     position: absolute;
-    top: 58%;
+    top: 55%;
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
 }
 
 .error-font {
+    /* margin: 0; */
+    color: red;
     height: 1em;
     display: block;
     font-size: small !important;

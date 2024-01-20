@@ -156,53 +156,55 @@ input:focus {
 
 
 .reg-header {
-    margin-top: 30px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
 .container {
     display: flex;
-  }
-  
-  .reg-section {
+}
+
+.reg-section {
     flex: 3;
+    /* align-items: center;
+    height: 100vh; */
     /* padding: 20px; */
     /* justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
     /* margin: 0;  */
-  }
+}
 
-  .image {
+.image {
     flex: 2;
     position: relative;
-  }
+}
 
-  .reg-d {
-    position: absolute; /* Allows the image to be positioned relative to its parent */
-    right: 0; 
-  }
-  
-  /* Form styles */
-  
-  /* form {
+.reg-d {
+    position: absolute;
+    /* Allows the image to be positioned relative to its parent */
+    right: 0;
+}
+
+/* Form styles */
+
+/* form {
     max-width: 400px;
     margin: 0 auto;  
   } */
-  
-  /* Form and image side by side */
-  @media (max-width: 1200px) {
-  
+
+/* Form and image side by side */
+@media (max-width: 1200px) {
+
     .container {
-       flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .reg-section {
-      width: 100%;
+        width: 100%;
     }
 
     .image {
         display: none;
     }
-  
-  }
+
+}

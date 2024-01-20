@@ -1,3 +1,18 @@
+<?php
+//Check if user is logged in
+session_start();
+if (isset($_SESSION['AccNo'])) {
+    header('Location: ../pages/dashboard.php');
+    exit;
+}
+
+//Check if there is an GET message
+$error = '';
+if (isset($_GET['msg'])) {
+    $error = $_GET['msg'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,15 +44,16 @@
                     <h1 class="login-header">Welcome to Sawongam Bank</h1>
                     <!-- Login Form  -->
                     <form action="../scripts/login_auth.php" method="POST">
-                        <label class="login-label" for="account">Account Number</label>
+                        <label class="login-label" for="accountNumber">Account Number</label>
                         <input class="textfield" type="text" id="accountNumber" name="accountNumber">
-
+                        <small id="error-accountNumber" class="error-font"></small>
                         <div class="password-field">
                             <label class="login-label" for="password">Password</label>
                             <input class="textfield" type="password" id="password" name="password">
                             <img src="../assets/img/eye-open.png" class="password-icon" id="eye-login">
+                            <small id="error-password" class="error-font"><?php echo $error ?></small>
                         </div>
-                        <button class="elevatedButton login-label" type="submit">Login</button>
+                        <button class="elevatedButton login-label" name="submit" type="submit">Login</button>
                     </form>
                     <p class="register-link">Don't have an account? <a class="no-underline reg-log"
                             href="register.php">Register</a></p>
