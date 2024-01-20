@@ -1,0 +1,114 @@
+.sidebar {
+  height: 1900px !important;
+}
+
+#wrapper {
+  grid-template-rows: 1900px !important;
+}
+
+.nav-item span{
+  padding-left: 15px;
+}
+
+.nav-item i {
+  height: 20px;
+  width: 20px;
+}
+
+.footer {
+  position: absolute;
+  top: 1720px !important;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.projects-row {
+  padding: 0 12px;
+  width: 50%;
+}
+
+.card-price .progress {
+  display: block;
+  width: 130px;
+  margin: 0 10px;
+}
+
+.overview-row {
+  flex-wrap: nowrap;
+}
+
+.revenue-body img {
+  width: 100%;
+  margin: 8px 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    height: 1700px !important;
+  }
+
+  #wrapper {
+    grid-template-rows: 1700px !important;
+  }
+
+  .footer {
+    position: absolute;
+    top: 1520px !important;
+    width: 100%;
+  }
+
+  .earnings {
+    width: 66%;
+  }
+
+  .col-income {
+    width: 50%;
+  }
+
+  .revenue {
+    width: calc(100% - 66%);
+  }
+
+  .color-column {
+    display: flex;
+    align-items: center;
+    width: 45% !important;
+    color: #fff;
+    height: max-content !important;
+    padding: 16px;
+    margin: 16px 10px;
+
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .col-income {
+    width: 25%;
+  }
+}
+
+.project-todol {
+  width: 50%;
+  margin-right: 12px;
+}
+
+.alert-colors {
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
+.color-column {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  color: #fff;
+  height: max-content !important;
+  padding: 16px;
+  margin: 16px 10px;
+
+}
