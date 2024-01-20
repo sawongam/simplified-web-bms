@@ -1,0 +1,117 @@
+/* Overall container */
+.main-container {
+    max-width: 100%;
+    /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Row */
+.row {
+    display: flex;
+}
+
+/* Form section */
+.form-section {
+    flex: 1;
+    /* Take up available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Form wrapper */
+.form-wrapper {
+    max-width: 500px;
+    /* Adjust as needed */
+    padding: 30px;
+    background-color: #fff;
+    /* Or any desired background */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo wrapper */
+.logo-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form header */
+.login-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #3490dc;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Input focus */
+input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 24px;
+}
+
+/* Image zoom animation */
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Logo section (large screens only) */
+.logo-section {
+    flex: 1;
+    /* Take up available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../assets/img/logo-background.jpg);
+    /* Adjust path if needed */
+    background-position: right;
+    background-size: cover;
+}
+
+/* Logo image */
+.logo-section img {
+    height: 100%;
+}

@@ -1,0 +1,96 @@
+.body-whole {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.login-header {
+    color: #1A1A1A;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.login-label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login-label a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.textfield {
+    border-color: #656ED3 !important;
+    background-color: #EBEFFF !important;
+    border-radius: 15px;
+}
+
+.elevatedButton {
+    margin-top: 10px;
+    width: 100%;
+    border-color: white !important;
+    background-color: #656ED3 !important;
+    border-radius: 20px;
+}
+
+.elevatedButton:hover {
+    background-color: #545bb0 !important;
+}
+
+.reg-log {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #656ED3;
+}
+
+.reg-log:hover {
+    color: #545bb0;
+}
+
+.login-block {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    width: 32.5%; 
+    background-color: #AFB3FF; 
+    z-index: -1;
+    overflow: hidden;
+}
+
+.register-d {
+    position: absolute;
+    top: 0;
+}
+
+.register-bank {
+    position: absolute; 
+    left: 0;
+    bottom: 0; 
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-icon {
+    height: 20px; 
+    position: absolute;
+    top: 58%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.error-font {
+    height: 1em;
+    display: block;
+    font-size: small !important;
+}
