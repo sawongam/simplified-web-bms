@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&family=Volkhov:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/home2.css">
@@ -20,7 +21,7 @@
 
 <body class="body-whole">
 
-    <!-- <img src="../assets/img/home-decor.png" class="bank-decor"> -->
+    <img src="../assets/img/home-decor.png" class="bank-decor">
 
     <!-- Navigation Bar -->
     <header>
@@ -37,7 +38,7 @@
                 <li><a href="../pages/login.php" class="nav-change-color no-underline">Login</a></li>
                 <li>
                     <div class="nav-signup-container">
-                        <a href="../pages/register.php" class="btn no-underline">Sign Up</a>
+                        <a href="./register.php" class="btn no-underline">Sign Up</a>
                     </div>
                 </li>
             </ul>
@@ -55,27 +56,17 @@
             <a href="./register.php" class="no-underline bank-btn">Register Now</a>
 
             <div class="social-icons">
-                <li class="list-inline-item bank-phone"> <img src="../assets/img/home-call.png" height="20px"
-                        class="zoom-on-hover"> +977 9819102869</li>
-                <li class="list-inline-item"><span class="vertical-divider"></span></li>
-                <li class="list-inline-item zoom-on-hover fa-sm"><a href="#"><i class="fab fa-facebook fa-lg"
-                            id="icon-awesome"></i></a></li>
-                <li class="list-inline-item zoom-on-hover fa-sm"><a href="#"><i class="fab fa-instagram fa-lg"
-                            id="icon-awesome"></i></a></li>
-                <li class="list-inline-item zoom-on-hover fa-sm"><a href="#"><i class="fab fa-twitter fa-lg"
-                            id="icon-awesome"></i></a></li>
-                <li class="list-inline-item zoom-on-hover fa-sm"><a href="#"><i class="fab fa-linkedin fa-lg"
-                            id="icon-awesome"></i></a></li>
-            </div>
-
-            <div><img src="../assets/img/home-call.png" height="20px" class="zoom-on-hover"> +977 9819102869</li>
+                <img src="../assets/img/home-call.png" height="20px" class="zoom-on-hover">
+                <span>+977 9819102869</span>
+                <a href="#"><i class="fab fa-facebook fa-lg" id="icon-awesome"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg" id="icon-awesome"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-lg" id="icon-awesome"></i></a>
             </div>
         </div>
 
         <div class="bank-img"><img class="img-fluid" src="../assets/img/bank.png"></div>
 
     </section>
-    <div class="gap"></div>
 
 
 </body>
