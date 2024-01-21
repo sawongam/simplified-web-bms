@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sawongam Bank - Putting fun in funds since 1969</title>
+    <title>Sawongam Bank - Putting fun in funds since 1920</title>
     <link rel="icon" href="../assets/img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
     <section class="hero">
         <div class="content">
             <p class="bank-subtitle">we don't just manage your money, we meme it.</p>
-            <h1 class="bank-title">Putting "fun" <br> in "funds" <br> since 1969</h1>
+            <h1 class="bank-title">Putting "fun" <br> in "funds" <br> since 1920</h1>
             <p class="bank-info">We're not your stuffy, suit-and-tie bankers. We're the bank that gets you - the meme
                 lords, the avocado toast enthusiasts, the ones who still think dogecoin has potential.</p>
 

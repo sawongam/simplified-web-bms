@@ -1,3 +1,4 @@
+
 .sidebar {
   height: 1900px !important;
 }
@@ -46,6 +47,11 @@ h3 {
 }
 
 @media screen and (min-width: 1200px) {
+
+  body {
+    overflow-y: hidden;
+  }
+
   .sidebar {
     height: 1700px !important;
   }

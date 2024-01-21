@@ -35,7 +35,7 @@ $result_getAccNo = mysqli_query($conn, $sql_getAccNo);
 $accNo = mysqli_fetch_assoc($result_getAccNo)['AccNo'];
 
 //Generate Balance for the Account
-$sql_genBal = "INSERT INTO balance (AccNo, Balance) VALUES ('$accNo', '69')";
+$sql_genBal = "INSERT INTO balance (AccNo, Balance) VALUES ('$accNo', '100')";
 $result_genBal = mysqli_query($conn, $sql_genBal);
 
 //Save the User Info for the Account

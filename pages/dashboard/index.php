@@ -32,23 +32,14 @@ $balance = $data['Balance'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../assets/img/logo.png" type="image/x-icon">
     <title>Dashboard - Sawongam Bank </title>
-    <!-- index main-mobile css -->
     <link rel="stylesheet" href="./css/index/mainMobile.css" />
-    <!-- index tablet css -->
     <link href="./css/index/table.css" media="(min-width: 600px)" rel="stylesheet">
-    <!-- index desktop css -->
     <link href="./css/index/desktop.css" media="(min-width: 900px)" rel="stylesheet">
-    <!-- For form CSS -->
     <link href="./css/profile/mainMobile.css" rel="stylesheet">
-    <!-- table main-mobile css -->
     <link href="./css/table/mainMobile.css" rel="stylesheet">
-    <!-- table tablet css -->
     <link href="./css/table/tablet.css" media="(min-width: 600px)" rel="stylesheet">
-    <!-- table desktop css -->
     <link href="./css/table/desktop.css" media="(min-width: 900px)" rel="stylesheet">
-    <!-- icon font-awesome css -->
     <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- common css -->
     <link rel="stylesheet" href="./css/common.css" />
 </head>
 
@@ -165,7 +156,7 @@ $balance = $data['Balance'];
                                 <div class="card-text">
                                     <div class="card-span"><span style="color: rgb(246, 194, 62);">Interest Rate</span>
                                     </div>
-                                    <div class="card-price"><span>6.09%</span></div>
+                                    <div class="card-price"><span>9.05%</span></div>
                                 </div>
                                 <div class="card-icon">
                                     <i class="fas fa-percent fa-2x text-gray-300"></i>
