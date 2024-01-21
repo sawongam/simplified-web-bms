@@ -8,6 +8,8 @@
 
 Simplified Web BMS is a basic banking management system built using core HTML, CSS, JavaScript, and PHP.
 
+Note: This is a simplified version of a BMS, You can get the full-fledged bank management system with more features built using Bootstrap from [Bank-Management-System-in-Web](https://github.com/sawongam/Bank-Management-System-in-Web).
+
 ## Features
 
 - User registration and login
@@ -22,8 +24,9 @@ To set up the project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/sawongam/simplified-web-bms.git`
 2. Navigate into the project directory: `cd simplified-web-bms`
 3. Install a local server environment like XAMPP or WAMP.
-4. Move the project files to the htdocs folder of your local server.
-5. Start your local server and open the project in your browser.
+4. Copy the [database](https://github.com/sawongam/Simplified-Web-BMS/blob/main/database/bms.sql) to your Local Server environment.
+5. Move the project files to the htdocs folder of your local server.
+6. Start your local server and open the project in your browser.
 
 ## Usage
 
